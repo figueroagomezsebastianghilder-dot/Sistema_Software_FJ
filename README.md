@@ -1,5 +1,3 @@
-#Ghilder Figueroa
-#programacion
 
 # Sistema Integral Software FJ
 
