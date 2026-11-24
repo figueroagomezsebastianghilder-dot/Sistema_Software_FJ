@@ -1,0 +1,555 @@
+2026-11-23 08:19:29,785 - INFO - Cliente registrado: C001
+2026-11-23 08:19:29,785 - INFO - Cliente registrado: C002
+2026-11-23 08:19:29,786 - ERROR - Error al registrar cliente
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 39, in registrar_cliente
+    cliente = Cliente(
+        identificador, nombre, correo, telefono
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 20, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 29, in validar_datos
+    raise ValueError("El correo electrónico no es válido.")
+ValueError: El correo electrónico no es válido.
+2026-11-23 08:19:29,805 - INFO - Servicio registrado: Sala de reuniones
+2026-11-23 08:19:29,805 - INFO - Servicio registrado: Computador
+2026-11-23 08:19:29,805 - INFO - Servicio registrado: Asesoría tecnológica
+2026-11-23 08:19:29,806 - ERROR - Servicio inválido detectado
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 197, in ejecutar_pruebas
+    servicio_invalido = ReservaSala(
+        "S004", "Sala inválida", -10000
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 19, in __init__
+    raise ValueError("El precio debe ser mayor que cero.")
+ValueError: El precio debe ser mayor que cero.
+2026-11-23 08:19:29,806 - INFO - Reserva creada: R001
+2026-11-23 08:19:29,807 - ERROR - Error al crear reserva
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 81, in crear_reserva
+    reserva = Reserva(
+        identificador,
+    ...<2 lines>...
+        duracion
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\reservas.py", line 24, in __init__
+    raise ReservaInvalidaError("La duración debe ser mayor que cero.")
+excepciones.ReservaInvalidaError: La duración debe ser mayor que cero.
+2026-11-23 08:19:29,808 - ERROR - Reserva inválida detectada
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 229, in ejecutar_pruebas
+    crear_reserva(
+    ~~~~~~~~~~~~~^
+        "R002", cliente1, sala, -3
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 81, in crear_reserva
+    reserva = Reserva(
+        identificador,
+    ...<2 lines>...
+        duracion
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\reservas.py", line 24, in __init__
+    raise ReservaInvalidaError("La duración debe ser mayor que cero.")
+excepciones.ReservaInvalidaError: La duración debe ser mayor que cero.
+2026-11-23 08:19:29,809 - INFO - Reserva R001 cancelada.
+2026-11-23 08:19:29,809 - INFO - Finalización de las diez operaciones.
+2026-11-23 08:27:19,779 - INFO - Cliente registrado: C001
+2026-11-23 08:27:19,779 - INFO - Cliente registrado: C002
+2026-11-23 08:27:19,779 - ERROR - Error al registrar cliente
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 39, in registrar_cliente
+    cliente = Cliente(
+        identificador, nombre, correo, telefono
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 20, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 29, in validar_datos
+    raise ValueError("El correo electrónico no es válido.")
+ValueError: El correo electrónico no es válido.
+2026-11-23 08:27:19,782 - INFO - Servicio registrado: Sala de reuniones
+2026-11-23 08:27:19,783 - INFO - Servicio registrado: Computador
+2026-11-23 08:27:19,783 - INFO - Servicio registrado: Asesoría tecnológica
+2026-11-23 08:27:19,783 - ERROR - Servicio inválido detectado
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 197, in ejecutar_pruebas
+    servicio_invalido = ReservaSala(
+        "S004", "Sala inválida", -10000
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 19, in __init__
+    raise ValueError("El precio debe ser mayor que cero.")
+ValueError: El precio debe ser mayor que cero.
+2026-11-23 08:27:19,784 - INFO - Reserva creada: R001
+2026-11-23 08:27:19,784 - ERROR - Error al crear reserva
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 81, in crear_reserva
+    reserva = Reserva(
+        identificador,
+    ...<2 lines>...
+        duracion
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\reservas.py", line 24, in __init__
+    raise ReservaInvalidaError("La duración debe ser mayor que cero.")
+excepciones.ReservaInvalidaError: La duración debe ser mayor que cero.
+2026-11-23 08:27:19,785 - ERROR - Reserva inválida detectada
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 229, in ejecutar_pruebas
+    crear_reserva(
+    ~~~~~~~~~~~~~^
+        "R002", cliente1, sala, -3
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 81, in crear_reserva
+    reserva = Reserva(
+        identificador,
+    ...<2 lines>...
+        duracion
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\reservas.py", line 24, in __init__
+    raise ReservaInvalidaError("La duración debe ser mayor que cero.")
+excepciones.ReservaInvalidaError: La duración debe ser mayor que cero.
+2026-11-23 08:27:19,785 - INFO - Reserva R001 cancelada.
+2026-11-23 08:27:19,785 - INFO - Finalización de las diez operaciones.
+2026-11-23 08:31:32,750 - INFO - Cliente registrado: C001
+2026-11-23 08:31:32,751 - INFO - Cliente registrado: C002
+2026-11-23 08:31:32,751 - ERROR - Error al registrar cliente
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 37, in registrar_cliente
+    cliente = Cliente(
+        identificador, nombre, correo, telefono
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 20, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 29, in validar_datos
+    raise ValueError("El correo electrónico no es válido.")
+ValueError: El correo electrónico no es válido.
+2026-11-23 08:31:32,755 - INFO - Servicio registrado: Sala de reuniones
+2026-11-23 08:31:32,755 - INFO - Servicio registrado: Computador
+2026-11-23 08:31:32,755 - INFO - Servicio registrado: Asesoría tecnológica
+2026-11-23 08:31:32,755 - ERROR - Servicio inválido detectado
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 195, in ejecutar_pruebas
+    servicio_invalido = ReservaSala(
+        "S004", "Sala inválida", -10000
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 19, in __init__
+    raise ValueError("El precio debe ser mayor que cero.")
+ValueError: El precio debe ser mayor que cero.
+2026-11-23 08:31:32,756 - INFO - Reserva creada: R001
+2026-11-23 08:31:32,757 - ERROR - Error al crear reserva
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 79, in crear_reserva
+    reserva = Reserva(
+        identificador,
+    ...<2 lines>...
+        duracion
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\reservas.py", line 24, in __init__
+    raise ReservaInvalidaError("La duración debe ser mayor que cero.")
+excepciones.ReservaInvalidaError: La duración debe ser mayor que cero.
+2026-11-23 08:31:32,757 - ERROR - Reserva inválida detectada
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 227, in ejecutar_pruebas
+    crear_reserva(
+    ~~~~~~~~~~~~~^
+        "R002", cliente1, sala, -3
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 79, in crear_reserva
+    reserva = Reserva(
+        identificador,
+    ...<2 lines>...
+        duracion
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\reservas.py", line 24, in __init__
+    raise ReservaInvalidaError("La duración debe ser mayor que cero.")
+excepciones.ReservaInvalidaError: La duración debe ser mayor que cero.
+2026-11-23 08:31:32,758 - INFO - Reserva R001 cancelada.
+2026-11-23 08:31:32,758 - INFO - Finalización de las diez operaciones.
+2026-11-23 08:31:32,758 - ERROR - Servicio no disponible detectado
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 284, in ejecutar_pruebas
+    sala.calcular_costo(1)
+    ~~~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 78, in calcular_costo
+    self.validar_parametros(duracion)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 30, in validar_parametros
+    raise ServicioNoDisponibleError(
+        f"El servicio {self.nombre} no está disponible."
+    )
+excepciones.ServicioNoDisponibleError: El servicio Sala de reuniones no está disponible.
+2026-11-23 08:35:55,481 - INFO - Cliente registrado: c004
+2026-11-23 08:43:43,761 - INFO - Servicio registrado: sala de reuniones
+2026-11-23 08:44:25,257 - INFO - Servicio registrado: computador
+2026-11-23 08:44:45,712 - INFO - Servicio registrado: asesoria tecnologica
+2026-11-23 08:47:02,537 - ERROR - Error al registrar cliente
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 37, in registrar_cliente
+    cliente = Cliente(
+        identificador, nombre, correo, telefono
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 20, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 29, in validar_datos
+    raise ValueError("El correo electrónico no es válido.")
+ValueError: El correo electrónico no es válido.
+2026-11-23 08:47:02,540 - ERROR - Error controlado en el menú
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 37, in registrar_cliente
+    cliente = Cliente(
+        identificador, nombre, correo, telefono
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 20, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 29, in validar_datos
+    raise ValueError("El correo electrónico no es válido.")
+ValueError: El correo electrónico no es válido.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 320, in menu_principal
+    registrar_cliente(
+    ~~~~~~~~~~~~~~~~~^
+        identificador, nombre, correo, telefono
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 50, in registrar_cliente
+    raise DatosInvalidosError(str(error)) from error
+excepciones.DatosInvalidosError: El correo electrónico no es válido.
+2026-11-23 08:47:29,129 - ERROR - Error al registrar cliente
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 37, in registrar_cliente
+    cliente = Cliente(
+        identificador, nombre, correo, telefono
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 20, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 29, in validar_datos
+    raise ValueError("El correo electrónico no es válido.")
+ValueError: El correo electrónico no es válido.
+2026-11-23 08:47:29,130 - ERROR - Error controlado en el menú
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 37, in registrar_cliente
+    cliente = Cliente(
+        identificador, nombre, correo, telefono
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 20, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 29, in validar_datos
+    raise ValueError("El correo electrónico no es válido.")
+ValueError: El correo electrónico no es válido.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 320, in menu_principal
+    registrar_cliente(
+    ~~~~~~~~~~~~~~~~~^
+        identificador, nombre, correo, telefono
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main.py", line 50, in registrar_cliente
+    raise DatosInvalidosError(str(error)) from error
+excepciones.DatosInvalidosError: El correo electrónico no es válido.
+2026-11-23 08:47:57,120 - INFO - Cliente registrado: c004
+2026-11-23 08:48:35,105 - INFO - Reserva creada: R003
+2026-11-23 08:50:19,985 - INFO - Reserva confirmada: R003
+2026-11-23 08:50:48,776 - INFO - Reserva cancelada: R003
+2026-11-24 08:44:14,388 - INFO - Cliente registrado: C001
+2026-11-24 08:44:14,388 - INFO - Cliente registrado: C002
+2026-11-24 08:44:14,389 - ERROR - Error al registrar cliente
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 37, in registrar_cliente
+    cliente = Cliente(
+        identificador, nombre, correo, telefono
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 20, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 29, in validar_datos
+    raise ValueError("El correo electrónico no es válido.")
+ValueError: El correo electrónico no es válido.
+2026-11-24 08:44:14,402 - INFO - Servicio registrado: Sala de reuniones
+2026-11-24 08:44:14,403 - INFO - Servicio registrado: Computador
+2026-11-24 08:44:14,403 - INFO - Servicio registrado: Asesoría tecnológica
+2026-11-24 08:44:14,403 - ERROR - Servicio inválido detectado
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 195, in ejecutar_pruebas
+    servicio_invalido = ReservaSala(
+        "S004", "Sala inválida", -10000
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 19, in __init__
+    raise ValueError("El precio debe ser mayor que cero.")
+ValueError: El precio debe ser mayor que cero.
+2026-11-24 08:44:14,404 - INFO - Reserva creada: R001
+2026-11-24 08:44:14,404 - ERROR - Error al crear reserva
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 79, in crear_reserva
+    reserva = Reserva(
+        identificador,
+    ...<2 lines>...
+        duracion
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\reservas.py", line 24, in __init__
+    raise ReservaInvalidaError("La duración debe ser mayor que cero.")
+excepciones.ReservaInvalidaError: La duración debe ser mayor que cero.
+2026-11-24 08:44:14,405 - ERROR - Reserva inválida detectada
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 227, in ejecutar_pruebas
+    crear_reserva(
+    ~~~~~~~~~~~~~^
+        "R002", cliente1, sala, -3
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 79, in crear_reserva
+    reserva = Reserva(
+        identificador,
+    ...<2 lines>...
+        duracion
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\reservas.py", line 24, in __init__
+    raise ReservaInvalidaError("La duración debe ser mayor que cero.")
+excepciones.ReservaInvalidaError: La duración debe ser mayor que cero.
+2026-11-24 08:44:14,405 - INFO - Reserva R001 cancelada.
+2026-11-24 08:44:14,406 - INFO - Finalización de las diez operaciones.
+2026-11-24 08:44:14,406 - ERROR - Servicio no disponible detectado
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 284, in ejecutar_pruebas
+    sala.calcular_costo(1)
+    ~~~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 78, in calcular_costo
+    self.validar_parametros(duracion)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 30, in validar_parametros
+    raise ServicioNoDisponibleError(
+        f"El servicio {self.nombre} no está disponible."
+    )
+excepciones.ServicioNoDisponibleError: El servicio Sala de reuniones no está disponible.
+2026-11-24 08:44:32,483 - INFO - Cliente registrado: C001
+2026-11-24 08:44:32,484 - INFO - Cliente registrado: C002
+2026-11-24 08:44:32,484 - ERROR - Error al registrar cliente
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 37, in registrar_cliente
+    cliente = Cliente(
+        identificador, nombre, correo, telefono
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 20, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 29, in validar_datos
+    raise ValueError("El correo electrónico no es válido.")
+ValueError: El correo electrónico no es válido.
+2026-11-24 08:44:32,487 - INFO - Servicio registrado: Sala de reuniones
+2026-11-24 08:44:32,487 - INFO - Servicio registrado: Computador
+2026-11-24 08:44:32,487 - INFO - Servicio registrado: Asesoría tecnológica
+2026-11-24 08:44:32,488 - ERROR - Servicio inválido detectado
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 195, in ejecutar_pruebas
+    servicio_invalido = ReservaSala(
+        "S004", "Sala inválida", -10000
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 19, in __init__
+    raise ValueError("El precio debe ser mayor que cero.")
+ValueError: El precio debe ser mayor que cero.
+2026-11-24 08:44:32,488 - INFO - Reserva creada: R001
+2026-11-24 08:44:32,489 - ERROR - Error al crear reserva
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 79, in crear_reserva
+    reserva = Reserva(
+        identificador,
+    ...<2 lines>...
+        duracion
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\reservas.py", line 24, in __init__
+    raise ReservaInvalidaError("La duración debe ser mayor que cero.")
+excepciones.ReservaInvalidaError: La duración debe ser mayor que cero.
+2026-11-24 08:44:32,489 - ERROR - Reserva inválida detectada
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 227, in ejecutar_pruebas
+    crear_reserva(
+    ~~~~~~~~~~~~~^
+        "R002", cliente1, sala, -3
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 79, in crear_reserva
+    reserva = Reserva(
+        identificador,
+    ...<2 lines>...
+        duracion
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\reservas.py", line 24, in __init__
+    raise ReservaInvalidaError("La duración debe ser mayor que cero.")
+excepciones.ReservaInvalidaError: La duración debe ser mayor que cero.
+2026-11-24 08:44:32,490 - INFO - Reserva R001 cancelada.
+2026-11-24 08:44:32,490 - INFO - Finalización de las diez operaciones.
+2026-11-24 08:44:32,491 - ERROR - Servicio no disponible detectado
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 284, in ejecutar_pruebas
+    sala.calcular_costo(1)
+    ~~~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 78, in calcular_costo
+    self.validar_parametros(duracion)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 30, in validar_parametros
+    raise ServicioNoDisponibleError(
+        f"El servicio {self.nombre} no está disponible."
+    )
+excepciones.ServicioNoDisponibleError: El servicio Sala de reuniones no está disponible.
+2026-11-24 08:48:53,586 - INFO - Cliente registrado: C001
+2026-11-24 08:48:53,587 - INFO - Cliente registrado: C002
+2026-11-24 08:48:53,587 - ERROR - Error al registrar cliente
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 37, in registrar_cliente
+    cliente = Cliente(
+        identificador, nombre, correo, telefono
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 20, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 29, in validar_datos
+    raise ValueError("El correo electrónico no es válido.")
+ValueError: El correo electrónico no es válido.
+2026-11-24 08:48:53,590 - INFO - Servicio registrado: Sala de reuniones
+2026-11-24 08:48:53,590 - INFO - Servicio registrado: Computador
+2026-11-24 08:48:53,590 - INFO - Servicio registrado: Asesoría tecnológica
+2026-11-24 08:48:53,590 - ERROR - Servicio inválido detectado
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 195, in ejecutar_pruebas
+    servicio_invalido = ReservaSala(
+        "S004", "Sala inválida", -10000
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 19, in __init__
+    raise ValueError("El precio debe ser mayor que cero.")
+ValueError: El precio debe ser mayor que cero.
+2026-11-24 08:48:53,591 - INFO - Reserva creada: R001
+2026-11-24 08:48:53,592 - ERROR - Error al crear reserva
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 79, in crear_reserva
+    reserva = Reserva(
+        identificador,
+    ...<2 lines>...
+        duracion
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\reservas.py", line 24, in __init__
+    raise ReservaInvalidaError("La duración debe ser mayor que cero.")
+excepciones.ReservaInvalidaError: La duración debe ser mayor que cero.
+2026-11-24 08:48:53,592 - ERROR - Reserva inválida detectada
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 227, in ejecutar_pruebas
+    crear_reserva(
+    ~~~~~~~~~~~~~^
+        "R002", cliente1, sala, -3
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 79, in crear_reserva
+    reserva = Reserva(
+        identificador,
+    ...<2 lines>...
+        duracion
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\reservas.py", line 24, in __init__
+    raise ReservaInvalidaError("La duración debe ser mayor que cero.")
+excepciones.ReservaInvalidaError: La duración debe ser mayor que cero.
+2026-11-24 08:48:53,593 - INFO - Reserva R001 cancelada.
+2026-11-24 08:48:53,593 - INFO - Finalización de las diez operaciones.
+2026-11-24 08:48:53,593 - ERROR - Servicio no disponible detectado
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 284, in ejecutar_pruebas
+    sala.calcular_costo(1)
+    ~~~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 78, in calcular_costo
+    self.validar_parametros(duracion)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 30, in validar_parametros
+    raise ServicioNoDisponibleError(
+        f"El servicio {self.nombre} no está disponible."
+    )
+excepciones.ServicioNoDisponibleError: El servicio Sala de reuniones no está disponible.
+2026-11-24 08:49:29,481 - INFO - Cliente registrado: C001
+2026-11-24 08:49:29,481 - INFO - Cliente registrado: C002
+2026-11-24 08:49:29,481 - ERROR - Error al registrar cliente
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 37, in registrar_cliente
+    cliente = Cliente(
+        identificador, nombre, correo, telefono
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 20, in __init__
+    self.validar_datos()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\clientes.py", line 29, in validar_datos
+    raise ValueError("El correo electrónico no es válido.")
+ValueError: El correo electrónico no es válido.
+2026-11-24 08:49:29,484 - INFO - Servicio registrado: Sala de reuniones
+2026-11-24 08:49:29,484 - INFO - Servicio registrado: Computador
+2026-11-24 08:49:29,484 - INFO - Servicio registrado: Asesoría tecnológica
+2026-11-24 08:49:29,484 - ERROR - Servicio inválido detectado
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 195, in ejecutar_pruebas
+    servicio_invalido = ReservaSala(
+        "S004", "Sala inválida", -10000
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 19, in __init__
+    raise ValueError("El precio debe ser mayor que cero.")
+ValueError: El precio debe ser mayor que cero.
+2026-11-24 08:49:29,485 - INFO - Reserva creada: R001
+2026-11-24 08:49:29,485 - ERROR - Error al crear reserva
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 79, in crear_reserva
+    reserva = Reserva(
+        identificador,
+    ...<2 lines>...
+        duracion
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\reservas.py", line 24, in __init__
+    raise ReservaInvalidaError("La duración debe ser mayor que cero.")
+excepciones.ReservaInvalidaError: La duración debe ser mayor que cero.
+2026-11-24 08:49:29,486 - ERROR - Reserva inválida detectada
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 227, in ejecutar_pruebas
+    crear_reserva(
+    ~~~~~~~~~~~~~^
+        "R002", cliente1, sala, -3
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 79, in crear_reserva
+    reserva = Reserva(
+        identificador,
+    ...<2 lines>...
+        duracion
+    )
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\reservas.py", line 24, in __init__
+    raise ReservaInvalidaError("La duración debe ser mayor que cero.")
+excepciones.ReservaInvalidaError: La duración debe ser mayor que cero.
+2026-11-24 08:49:29,487 - INFO - Reserva R001 cancelada.
+2026-11-24 08:49:29,487 - INFO - Finalización de las diez operaciones.
+2026-11-24 08:49:29,487 - ERROR - Servicio no disponible detectado
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\main-pruebas.py", line 284, in ejecutar_pruebas
+    sala.calcular_costo(1)
+    ~~~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 78, in calcular_costo
+    self.validar_parametros(duracion)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Usuario\Desktop\Sistema_Software_FJ\servicios.py", line 30, in validar_parametros
+    raise ServicioNoDisponibleError(
+        f"El servicio {self.nombre} no está disponible."
+    )
+excepciones.ServicioNoDisponibleError: El servicio Sala de reuniones no está disponible.
